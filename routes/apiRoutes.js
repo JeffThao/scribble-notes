@@ -1,8 +1,8 @@
 const db = require("../db/db.json");
 const fs = require("fs");
-const { v4: uuidv4 } = require('uuid');
+const { uuid } = require('uuidv4');
 
-
+console.log(uuid());
 module.exports = function (app) {
 
     app.get("/api/notes", function (req, res) {
